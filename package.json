@@ -1,0 +1,17 @@
+{
+  "name": "0.0.1",
+  "version": "0.0.1",
+  "description": "Mejora de proyecto foodmap",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "foodmap"
+  ],
+  "author": "Tamara",
+  "license": "ISC"
+}
