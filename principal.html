@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="src/css/principal.css">
+    <!-- <link rel="stylesheet" href="../nou/nouislider.css"> -->
+    <!-- Link Materialize para css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Link para íconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Foodmap</title>
+</head>
+<body>
+    <!--Contenedor de título-->
+        <div class="container">
+                <h1 class="center-align amber-text text-darken-3">Foodmap</h1>
+        </div>
+    <!--Filtro-->
+        <form action="#">
+                <p class="range-field">
+                  <input type="range" id="test5" min="0" max="100" />
+                </p>
+              </form>
+
+    <!--Búsqueda por tipo de comida-->
+        <div class="containerTwo">
+                <h4 class="center-align amber-text text-darken-3">¿Qué restaurant buscas?</h4>
+        </div>
+
+        <nav>
+                <div class="nav-wrapper amber darken-1">
+                  <form>
+                    <div class="input-field">
+                      <input id="search" type="search" required>
+                      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </div>
+              </nav>
+
+
+    <!--Mapa-->
+    <div id="map"></div>
+
+     <!-- Modal Trigger -->
+        <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+          
+   <!-- Modal Structure -->
+   <!-- <div id="modal1" class="modal">
+        <div class="information">
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="modal-footer">
+          <a href="../principal/principal.html" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
+        </div>
+      </div> -->
+
+    <!--Carrousel-->
+    <div class="slider">
+            <ul class="slides">
+              <li>
+                <img src="http://osakasushi.cl/wp-content/uploads/2018/02/feng-shui-sushi.jpg"> 
+              </li>
+              <li>
+                <img src="http://blog.santiagoexchange.cl/wp-content/uploads/2017/04/portada.jpg"> 
+              </li>
+              <li>
+                <img src="https://abasto.com/wp-content/uploads/2018/02/comida-mexicana.jpg"> 
+              </li>
+            </ul>
+          </div>
+              
+    <!--API KEY: AIzaSyDASoquoCpXyYppGev41cMSX3DZJLrCzoM-->
+    <script async defer   
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDASoquoCpXyYppGev41cMSX3DZJLrCzoM&libraries=places&callback=">
+    </script>
+    
+    <!-- Link Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Link Materialize para JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script src="../splash/splash.html"></script>
+    <!-- <script src="../nou/nouislider.js"></script> -->
+    <script src="src/controllers/app.js"></script>
+</body>
+
+</html>
