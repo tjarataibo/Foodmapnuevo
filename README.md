@@ -7,4 +7,4 @@ restaurantes que cumplan con la condición.
 
 Para llegar a la completitud de este desafío, se planifica a través de la misma aplicación web:
 
-* [Planning]()
+* [Planning](https://trello.com/b/owv5cOoZ/foodmap)
