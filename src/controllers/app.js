@@ -10,11 +10,6 @@
 // 	}
 // });
 
-// Funcionalidad de barra de búsqueda
-$(document).ready(function() {
-  $('.nav-wrapper').nav - wrapper();
-});
-
 // Carrousel
 $(document).ready(function() {
   $('.slider').slider();
