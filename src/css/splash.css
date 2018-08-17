@@ -12,8 +12,8 @@ body {
    }
 
    .brand-logo {
-    padding-top: 100px;   
-    padding-bottom: 80px; 
+    /*padding-top: 100px;   
+    padding-bottom: 80px; */
     width: 340px;
     height: 120px;
     margin: 150px auto 50px auto;
@@ -38,15 +38,15 @@ body {
    .loaderOne {
     width: 70px;
     height: 70px;
-    border-top: 5px solid rgb(202, 120, 58);
-    border-bottom: 5px solid rgb(202, 120, 58);
+    border-top: 5px solid rgb(133, 131, 130);
+    border-bottom: 5px solid rgb(152, 152, 40);
     animation: clockwisespin 2s linear 3;
    }
    .loaderTwo {
     width: 60px;
     height: 60px;
-    border-left: 5px solid rgb(242, 89, 7);
-    border-right: 5px solid rgb(242, 89, 7);
+    border-left: 5px solid rgb(152, 152, 18);
+    border-right: 5px solid rgb(148, 148, 146);
     top: 5px; left: 5px;
     animation: anticlockwisespin 2s linear 3;
    }
