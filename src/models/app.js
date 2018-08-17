@@ -57,6 +57,7 @@ function initMap(position) {
   }
 }
 
+
 // Obtención de nombre de lugar, ubicación e ícono
 // Create the search box and link it to the UI element.
 var input = document.getElementById('pac-input');
@@ -74,7 +75,7 @@ var markers = [];
 searchBox.addListener('places_changed', function() {
   var places = searchBox.getPlaces();
 
-  if (places.length === 0) {
+  if (places.length == 0) {
     return;
   }
 
@@ -116,3 +117,4 @@ searchBox.addListener('places_changed', function() {
   });
   map.fitBounds(bounds);
 });
+
