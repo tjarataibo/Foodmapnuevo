@@ -18,18 +18,18 @@
                 <h1 class="center-align amber-text text-darken-3">Foodmap</h1>
         </div>
     <!--Filtro-->
-        <form action="#">
+        <!-- <form action="#">
                 <p class="range-field">
                   <input type="range" id="test5" min="0" max="100" />
                 </p>
-              </form>
+              </form> -->
 
     <!--Búsqueda por tipo de comida-->
         <div class="containerTwo">
-                <h4 class="center-align amber-text text-darken-3">¿Qué restaurant buscas?</h4>
+                <h4 class="center-align amber-text text-darken-3">¿Qué tipo de comida buscas?</h4>
         </div>
 
-        <nav>
+        <!-- <nav>
                 <div class="nav-wrapper amber darken-1">
                   <form>
                     <div class="input-field">
@@ -39,8 +39,17 @@
                     </div>
                   </form>
                 </div>
-              </nav>
-
+        </nav> -->
+    <!--Select-->
+        <div class="input-field col s12 m6 orange accent-1">
+           <select class="icons">
+            <option value="" disabled selected>Selecciona tipo de comida</option>
+            <option value="" data-icon="https://cdn.forbes.com.mx/2018/02/china--640x360.jpg">Comida China</option>
+            <option value="" data-icon="https://media-cdn.tripadvisor.com/media/photo-s/06/f6/5f/1b/viva-a-comida-peruana.jpg">Comida Peruana</option>
+            <option value="" data-icon="https://abasto.com/wp-content/uploads/2018/02/comida-mexicana.jpg">Comida Mexicana</option>
+            <option value="" data-icon="http://osakasushi.cl/wp-content/uploads/2018/02/feng-shui-sushi.jpg">Sushi</option>
+          </select>
+        </div>
 
     <!--Mapa-->
     <div id="map"></div>

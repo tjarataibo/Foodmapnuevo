@@ -56,3 +56,7 @@ function initMap(position) {
     });
   }
 }
+
+// Funcionalidad de búsqueda
+let input = document.getElementById('search');
+let searching = new google.maps.places.searching(input - field);

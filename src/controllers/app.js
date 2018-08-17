@@ -11,9 +11,9 @@
 // });
 
 // Funcionalidad de barra de búsqueda
-// $(document).ready(function(){
-//     $('.nav-wrapper').nav-wrapper();
-//   });
+$(document).ready(function() {
+  $('.nav-wrapper').nav - wrapper();
+});
 
 // Carrousel
 $(document).ready(function() {
@@ -36,4 +36,7 @@ $(document).ready(function() {
 //     modaL.innerHTML += `<h3>${name}</h3><h3>${radio}</h3><p>${star}</p>` 
 // }
 
-   
+// Funcionalidad de select
+$(document).ready(function() {
+  $('select').formSelect();
+});
