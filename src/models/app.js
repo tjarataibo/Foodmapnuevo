@@ -57,6 +57,27 @@ function initMap(position) {
   }
 }
 
-// Funcionalidad de búsqueda
-// let input = document.getElementById('search');
-// let searching = new google.maps.places.searching(input - field);
+// Obtención de nombre de lugar, ubicación e ícono
+// let bounds = new google.maps.LatLngBounds(); 
+// places.forEach(function(place) {
+//   let icon = {
+//     url: place.icon,
+//     size: new google.maps.Size(71, 71),
+//     origin: new google.maps.Point(0, 0),
+//     anchor: new google.maps.Point(17, 34),
+//     scaledSize: new google.maps.Size(50, 50)
+//   };
+//   // Marcador de búsquedas 
+//   markers.push(new google.maps.Marker({
+//     map: map,
+//     icon: icon,
+//     title: place.name,
+//     position: place.geometry.location
+//   }));
+//   if (place.geometry.viewport) {
+//     bounds.union(place.geometry.viewport);
+//   } else {
+//     bounds.extend(place.geometry.location);
+//   }
+// });
+// map.fitBounds(bounds);
