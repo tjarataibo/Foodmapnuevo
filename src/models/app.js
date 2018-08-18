@@ -118,3 +118,29 @@ searchBox.addListener('places_changed', function() {
   map.fitBounds(bounds);
 });
 
+var marker = new google.maps.Marker({
+  map: map,
+  position: place.geometry.location,
+  // fields: ['photos', 'formatted_address', 'name', 'rating', 'opening_hours', 'geometry'],
+  title: place.name,
+  icon: photos[0].getUrl({'maxWidth': 35,
+    'maxHeight': 35})
+});
+
+// Detalles del lugar 
+service = new google.maps.places.PlacesService(map);
+service.getDetails(request, callback);
+
+var request = {
+  placeId: 'ChIJUR74fWpvYpYR2oNLRG3CzWA', // Id de Región Metropolitana.  Santiago de Chile = ChIJL68lBEHFYpYRMQkPQDzVdYQ
+  fields: ['name', 'rating', 'formatted_phone_number', 'geometry']
+};
+  
+service = new google.maps.places.PlacesService(map);
+service.getDetails(request, callback);
+  
+function callback(place, status) {
+  if (status === google.maps.places.PlacesServiceStatus.OK) {
+    createMarker(place);
+  }
+}

@@ -3,7 +3,7 @@
   var preload = document.getElementById('splash');
   var loading = 0;
   var id = setInterval(frame, 30);
-   
+     
   function frame() {
     if (loading === 100) {
       clearInterval(id);
