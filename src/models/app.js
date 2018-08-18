@@ -117,7 +117,6 @@ searchBox.addListener('places_changed', function() {
   });
   map.fitBounds(bounds);
 });
-
 var marker = new google.maps.Marker({
   map: map,
   position: place.geometry.location,
